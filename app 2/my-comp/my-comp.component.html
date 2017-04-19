@@ -1,0 +1,13 @@
+
+
+<fieldset [ngClass]="{app1:true}">
+  <legend >Template from Component 1</legend>
+<ul>
+  <li upper *ngFor="let k of arrayInput">{{k}}</li>
+</ul>
+ <p [Myvisibility]="true">I am visible...</p> 
+ <p [Myvisibility]="false">I am not visible...</p>
+ <button (mycolor)='catchcolor($event)'> change Color</button> <br>
+ <div [ngStyle]="{'background-color':ccolor,'width':'50%', 'height':'50px'}"> </div>
+
+</fieldset>
